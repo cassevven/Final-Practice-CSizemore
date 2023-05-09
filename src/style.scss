@@ -27,27 +27,19 @@ header {
   }
   
   // Navigation
-  nav {
-    ul {
-      list-style: none;
-      display: flex;
-      
-      li {
-        margin-left: 1rem;
-        
-        a {
-          color: $primary-color;
-          text-decoration: none;
-          transition: color 0.3s ease;
-          
-          &:hover,
-          &.active {
-            color: $primary-color;
-          }
-        }
-      }
-    }
+  ul {
+    display: inline;
+    text-align: center;
+    font-size: large;
   }
+  
+  li {
+    display: block;
+    float: left;
+    margin: 10px;
+    line-height: 10px;
+  }
+  
   
   // Responsive
   @media (max-width: 768px) {
@@ -129,25 +121,6 @@ header {
       padding: 1rem 2rem;
     }
   }
-
-.breadcrumb {
-    padding: 0 .5rem;
-}
-
-.breadcrumb ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-}
-    
-.breadcrumb li:not(:last-child)::after {
-    display: inline-block;
-    margin: 0 .25rem;
-    content: "→";
-}
 
 footer {
     color: #000;
