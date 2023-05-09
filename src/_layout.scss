@@ -25,6 +25,7 @@ header {
     display: inline;
     text-align: center;
     font-size: large;
+
   }
   
   li {
@@ -181,10 +182,15 @@ header {
     .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     background: $header-bg;
     color: #000;
     padding: 20px;
+}
+
+.footer-nav {
+  list-style: none;
+  line-height: 25px;
 }
 
 
