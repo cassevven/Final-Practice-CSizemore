@@ -3,11 +3,6 @@ body {
 }
 
 
-h1 {
-  margin: none;
-  padding: none;
-}
-
 // Gradient background
 $header-bg: linear-gradient(to bottom, $primary-color, $secondary-color);
 
@@ -31,6 +26,7 @@ header {
     display: inline;
     text-align: center;
     font-size: large;
+
   }
   
   li {
@@ -175,8 +171,7 @@ header {
         text-align: center;
         font-size: large;
         padding: 2px;
-        
-  }
+    }
 
     .row { 
         display: -webkit-flex;
@@ -189,7 +184,6 @@ header {
 
     .quote {
       text-align: left;
-      
     }
 
 .column {
@@ -202,11 +196,12 @@ header {
 
 .flex-item-schedule {
 color: $dark-color;
-padding: 75px;
+padding: 50px;
 flex: 100%;
 font-size: 2em;
 text-align: center;
 }
+
 .info {
     color: $dark-color;
     flex: 100%;
@@ -214,23 +209,28 @@ text-align: center;
     padding-top: none;
   }
 
+  footer {
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .logo {
+    flex-basis: 1;
+  }
 
     .container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: $header-bg;
+    justify-content: space-around;
+    background: $footer-bg;
     color: $dark-color;
-    
+    flex-basis: 1; 
 }
 
 .footer-nav {
   list-style: none;
   line-height: 25px;
- 
+  flex-basis: 1
 }
-
-
 
 @media (max-width: 600px) {
     .row {

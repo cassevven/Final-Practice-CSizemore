@@ -2,11 +2,6 @@ body {
   margin: 0;
 }
 
-h1 {
-  margin: none;
-  padding: none;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -183,7 +178,7 @@ header a:hover {
 
 .flex-item-schedule {
   color: black;
-  padding: 75px;
+  padding: 50px;
   flex: 100%;
   font-size: 2em;
   text-align: center;
@@ -196,17 +191,27 @@ header a:hover {
   padding-top: none;
 }
 
+footer {
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.logo {
+  flex-basis: 1;
+}
+
 .container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: linear-gradient(to bottom, #cdaac9, #fff);
+  justify-content: space-around;
+  background: linear-gradient(to top, #cdaac9, #fff);
   color: black;
+  flex-basis: 1;
 }
 
 .footer-nav {
   list-style: none;
   line-height: 25px;
+  flex-basis: 1;
 }
 
 @media (max-width: 600px) {
