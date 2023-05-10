@@ -2,12 +2,17 @@ body {
   margin: 0;
 }
 
+h1 {
+  margin: none;
+  padding: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: linear-gradient(to bottom, #e26cd2, #fff);
+  background: linear-gradient(to bottom, #cdaac9, #fff);
   color: black;
 }
 header .logo {
@@ -30,7 +35,7 @@ header a:link {
   color: black;
 }
 header a:hover {
-  color: #e26cd2;
+  color: #cdaac9;
 }
 @media (max-width: 768px) {
   header {
@@ -59,25 +64,21 @@ header a:hover {
   color: black;
   flex: 100%;
   font-size: 2em;
-  line-height: 50px;
+  padding-top: none;
 }
 
-.flex-item-1 {
+.flex-item-1, .flex-item-3 {
   background-color: black;
-  padding: 10px;
+  padding: 20px;
   flex: 15%;
+  font-size: large;
 }
 
 .flex-item-2 {
-  background-color: #e26cd2;
-  padding: 10px;
+  background-color: #cdaac9;
+  padding: 20px;
   flex: 15%;
-}
-
-.flex-item-3 {
-  background-color: black;
-  padding: 10px;
-  flex: 15%;
+  font-size: large;
 }
 
 @media (max-width: 800px) {
@@ -150,16 +151,22 @@ header a:hover {
 .speaker {
   background-color: black;
   color: #fff;
-  padding: 30px;
   text-align: center;
+  font-size: large;
+  padding: 2px;
 }
 
 .row {
   display: -webkit-flex;
   display: flex;
-  padding-bottom: 120px;
+  padding-bottom: 150px;
+  text-align: center;
+  font-size: medium;
+  margin: 10px;
+}
+
+.quote {
   text-align: left;
-  font-size: smaller;
 }
 
 .column {
@@ -168,14 +175,13 @@ header a:hover {
   flex: 1;
   padding: 10px;
   height: 300px;
-  font-size: larger;
 }
 
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: linear-gradient(to bottom, #e26cd2, #fff);
+  background: linear-gradient(to bottom, #cdaac9, #fff);
   color: black;
 }
 

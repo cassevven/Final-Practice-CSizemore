@@ -2,6 +2,15 @@ body {
     margin: 0;
 }
 
+
+
+
+
+h1 {
+  margin: none;
+  padding: none;
+}
+
 // Gradient background
 $header-bg: linear-gradient(to bottom, $primary-color, $secondary-color);
 
@@ -70,29 +79,27 @@ header {
     text-align: center;
     color: $secondary-color;
 }
-.flex-item-0 {
-    color: $dark-color;
-    flex: 100%;
-    font-size: 2em;
-    line-height: 50px;
 
+.flex-item-0 {
+  color: $dark-color;
+  flex: 100%;
+  font-size: 2em;
+  padding-top: none;
 }
 
-.flex-item-1 {
+.flex-item-1, .flex-item-3 {
     background-color: $dark-color;
-    padding: 10px;
+    padding: 20px;
     flex: 15%;
+    font-size: large;
 }
 .flex-item-2 {
     background-color: $primary-color;
-    padding: 10px;
+    padding: 20px;
     flex: 15%;
+    font-size: large;
 }
-.flex-item-3 {
-    background-color: $dark-color;
-    padding: 10px;
-    flex: 15%;
-}
+
 
 @media (max-width: 800px) {
     .flex-item-0, .flex-item-1, .flex-item-2, .flex-item-3 {
@@ -163,19 +170,24 @@ header {
     .speaker {
         background-color: $dark-color;
         color: $secondary-color;
-        padding: 30px;
         text-align: center;
-    
+        font-size: large;
+        padding: 2px;
+        
   }
 
     .row { 
         display: -webkit-flex;
         display: flex;
-        padding-bottom: 120px;
-        text-align: left;
-        font-size: smaller;
+        padding-bottom: 150px;
+        text-align: center;
+        font-size: medium;
+        margin: 10px;
+    }
 
-    
+    .quote {
+      text-align: left;
+      
     }
 
 .column {
@@ -184,7 +196,7 @@ header {
     flex: 1;
     padding: 10px;
     height: 300px;
-    font-size: larger;
+  
 
 
 }
