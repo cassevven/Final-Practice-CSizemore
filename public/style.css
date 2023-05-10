@@ -12,7 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: linear-gradient(to bottom, #cdaac9, #fff);
+  background: aqua;
   color: black;
 }
 header .logo {
@@ -183,7 +183,7 @@ header a:hover {
 
 .flex-item-schedule {
   color: black;
-  padding-top: 50px;
+  padding: 100px;
   flex: 100%;
   font-size: 2em;
   text-align: center;

@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: $header-bg;
+  background: aqua;
   color: $dark-color;
   
   // Logo
@@ -202,7 +202,7 @@ header {
 
 .flex-item-schedule {
 color: $dark-color;
-padding-top: 50px;
+padding: 100px;
 flex: 100%;
 font-size: 2em;
 text-align: center;
