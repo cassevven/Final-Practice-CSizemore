@@ -183,8 +183,8 @@ header a:hover {
 
 .flex-item-schedule {
   color: black;
-  padding-top: 25px;
-  flex: 15%;
+  padding-top: 50px;
+  flex: 100%;
   font-size: 2em;
   text-align: center;
 }
